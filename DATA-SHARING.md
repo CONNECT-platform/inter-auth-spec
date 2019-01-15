@@ -1,4 +1,4 @@
-# User Data Sharing InterAuth Spec
+# Data Sharing InterAuth Spec
 
 This document aims to specify methods in which two (micro)services would integrate with each other, in a scenario where
 one service is a **data host**, or **host** for short, as it maintains access to some specific and shareable user-data, and
