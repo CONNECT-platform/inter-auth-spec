@@ -10,11 +10,14 @@ these documents aim to provide a framework for seamless and secure communication
 
 for easing the process of accessing and reading different sections of this specification, it is broken down into several documents. in the following section all these subdocuments are named in the form of a table of contents and 
 
-1. ### preface
-    1. #### [motivation](MOTIVATION.md)
-    1. #### goals
-    1. #### terminology
-    1. #### notation
+
+1. #### [motivation](MOTIVATION.md)
+    1. #### [background](MOTIVATION.md#background)
+    1. #### [direct integration](MOTIVATION.md#direct-integration)
+    1. #### [authorized integration](MOTIVATION.md#authorized-integration)
+1. #### goals
+1. #### terminology
+1. #### notation
 1. ### protocols
     1. #### entities
         1. ##### service identification service (SIS)
