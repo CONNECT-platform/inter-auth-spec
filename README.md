@@ -15,7 +15,7 @@ for easing the process of accessing and reading different sections of this speci
     1. #### [background](MOTIVATION.md#background)
     1. #### [direct integration](MOTIVATION.md#direct-integration)
     1. #### [authorized integration](MOTIVATION.md#authorized-integration)
-1. #### goals
+1. #### [goals](GOALS.md)
 1. #### terminology
 1. #### notation
 1. ### protocols
