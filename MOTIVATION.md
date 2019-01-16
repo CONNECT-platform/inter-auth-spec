@@ -1,8 +1,24 @@
 # Motivation
 
+## Background
+
+integration between different services is dependent on services being able to establish communication criteria 
+(authentication, authorization of required resources and functionality)
+and then subsequently communicating based on the established criteria. the later part involves **consumer** services
+utilizing *SDKs*s developed either by or based on API specifications of **provider** services. as this process is highly
+**provider** specific, there are hard limitations on how inter-operable and seamless the process can effectively become,
+however standardizations on **provider** APIs such as 
+[inter-connectible services specification](https://github.com/CONNECT-platform/connect-platform/blob/master/INTERCONNECTIBILITY.md) 
+or [Open API](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)
+have already availed _automatic SDK generation_ ([CONNECT platform itself](https://github.com/CONNECT-platform/connect-platform) and [Swagger Codegen](https://swagger.io/tools/swagger-codegen/) respectively), greatly easing the second
+component of integration process. however, the first component, which can be boiled down to _authentication_, corresponding
+to **direct integration**, and _authorization_, corresponding to **authorized integration**, still suffers from lack
+of any standardization, as there are either no specifications available or available specifications lack proper applicability
+as they have been mostly designed with other intentions.
+
 ## Direct Integration
 
-as it currently stands, the conventional method of conducting **direct integration**, which can be thoguht of as a mere _authentication_ of the **consumer** by the **provider**, is for the developers of the **consumer** service to utilize some web-portal or some other provider-specific method to first _authenticate_ themselves (usually by registering real accounts), obtaining some sort of _API key_, adding (installing or effectively developing) some form of _SDK_ (software development kit) for working with the APIs of the **provider** on their **consumer** service, and feeding the retrieved _API key_ into the _SDK_. this obviously has the following down-sides:
+as it currently stands, the conventional method of conducting **direct integration**, is for the developers of the **consumer** service to utilize some web-portal or some other provider-specific method to first _authenticate_ themselves (usually by registering real accounts), obtaining some sort of _API key_, adding (installing or effectively developing) some form of _SDK_ (software development kit) for working with the APIs of the **provider** on their **consumer** service, and feeding the retrieved _API key_ into the _SDK_. this obviously has the following down-sides:
 
 1. _API keys_ are bound to accounts and not **consumer** services. in-effect, developers are authenticated and subsequently offered these keys, and in many cases multiple **consumer** services belonging to the same entity (team/organization) will end-up sharing _API keys_. this alone cause its own host of issues:
     1. developers can leak out _API keys_ (for example in case of an ungraceful dispute with the owner organization)
@@ -15,7 +31,7 @@ additionally, in most cases that involve some financial transaction in exchange 
 
 ## Authorized Integration
 
-currently there aren't many **authorized integration**, which can be thought of as _authorization_ of **consumer**'s access to specific resource/services offered by the **provider**, is also not well supported by standing specifications, frameworks, protocols, etc. currently most widely adopted and actively maintained framework for inter-service authorization is OAuth 2.0 (since OpenID is also utilizing OAuth 2.0 at the time of this writing, it will not be referenced here specifically). however:
+currently there aren't many **authorized integration**, is also not well supported by standing specifications, frameworks, protocols, etc. currently most widely adopted and actively maintained framework for inter-service authorization is OAuth 2.0 (since OpenID is also utilizing OAuth 2.0 at the time of this writing, it will not be referenced here specifically). however:
 
 1. [OAuth 2.0 has limited interoperability](https://tools.ietf.org/html/rfc6749#section-1.8), which results in non-interoperable implementations by various **provider**s.
 1. OAuth 2.0 is designed focusing on end-user authorization, relying extensively on concepts specific to that scenario, such as user-agents and [HTTP redirects](https://tools.ietf.org/html/rfc6749#section-1.7), which limit its applicability (for example, in case of systematic **authorize**ing parties, where all of the communication should occur without involvement of any user-agent).
