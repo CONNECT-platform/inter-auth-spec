@@ -11,7 +11,7 @@ as it currently stands, the conventional method of conducting **direct integrati
 1. the _API key_ usually is the only security measure in-place. in case of a MITM attack (for example, an occasional failure of the TLS/SSL layer between **consumer** and **provider**), all forms of secrecy in the protocol is lost.
 1. the process is extremely tedious and unstandardized.
 
-additionally, in most cases that involve some financial aspect, the cost for the **consumer** would be tied in some way to the number of _API calls_ they make to the the **provider**, for calculating which they should also completely rely on the truthfulness of the **provider**. even in case of truthful providers, this will at least affect the incentives of the providers to maintain and/or improve the quality and reliability of their usage measurement mechanisms. this would also in-turn fallback on the credibility of the provider entity, increasing the entry barrier for service providers to be able to offer services feasibly in the market.
+additionally, in most cases that involve some financial transaction in exchange for provided services, the cost for the **consumer** would be tied in some way to the number of _API calls_ they make to the the **provider**, for calculating which they should also completely rely on the truthfulness of the **provider**. even in case of truthful providers, this will at least affect the incentives of the providers to maintain and/or improve the quality and reliability of their usage measurement mechanisms. this would also in-turn fallback on the credibility of the provider entity, increasing the entry barrier for service providers to be able to offer services feasibly in the market.
 
 ## Authorized Integration
 
