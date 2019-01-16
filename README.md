@@ -21,5 +21,3 @@ for easing the process of accessing and reading different sections of this speci
 1. ### security analysis
 1. ### further work
 
-## remarks
-
