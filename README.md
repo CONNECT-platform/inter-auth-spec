@@ -16,6 +16,10 @@ for easing the process of accessing and reading different sections of this speci
     1. #### terminology
     1. #### notation
 1. ### protocols
+    1. #### entities
+        1. ##### service identification service (SIS)
+        1. ##### auhtorization service (AS)
+        1. ##### independent usage measurement service (IUMS)
     1. #### direct integration
     1. #### authorized integration
 1. ### security analysis
