@@ -8,6 +8,8 @@ to be more specific, these documents focus on one service, **consumer**, request
 
 1. where the functionality/data provided by the **provider** relates to, or by some other measure requires approval of a third-party, the **authorizer**
 
+## status quo
+
 as it currently stands, the conventional method of conducting the first category integration, which can be thoguht of as a mere _authentication_ of the **consumer** by the **provider**, is for the developers of the **consumer** service to utilize some web-portal or some other provider-specific method to first _authenticate_ themselves (usually by registering real accounts), obtaining some sort of _API key_, adding (installing or effectively developing) some form of _SDK_ (software development kit) for working with the APIs of the **provider** on their **consumer** service, and feeding the retrieved _API key_ into the _SDK_. this obviously has the following down-sides:
 
 1. _API keys_ are bound to accounts and not **consumer** services. in-effect, developers are authenticated and subsequently offered these keys, and in many cases multiple **consumer** services belonging to the same entity (team/organization) will end-up sharing _API keys_. this alone cause its own host of issues:
