@@ -21,7 +21,7 @@ for easing the process of accessing and reading different sections of this speci
     1. #### [seamlessness](GOALS.md#seamlessness)
 1. ### terminology
 1. ### notation
-1. ### [security](GOALS.md#security)
+1. ### [security](SECURITY.md)
     1. #### [secure communication](SECURITY.md#secure-communication-channel)
         1. ##### [external communication](SECURITY.md#external-communication)
     1. #### [cryptography](SECURITY.md#cryptography)
