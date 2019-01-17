@@ -59,8 +59,19 @@ the choice of asymmetric and symmetric cryptography. all encryption is delegated
 channels, and for the protocols only digital signatures are assumed with explicitly mentioned
 expected properties. the specification is agnostic to any properties beyond those explicitly mentioned.
 
-## Ease of Development
+## Seamlessness
 
-## Automatibility
+it was a main goal of this specification to be as easy and as transparent as possible for developers, both
+implementers the **trusted entities** of a network and implementers of **provider** and **consumer** services,
+prioritizing the latter over the former. the specification aims to encourage higher levels of integrations,
+which in turn might lead to higher adoption of micro-service architectural styles and in turn even further integration
+between these services, through lowering implementation costs without sacrificing security and robustness
+of communication protocols.
 
-## Shareability
+the specification also aims at encouraging reuse of services developed by independent entities within the
+**network**, by means of lowering implementation costs for both **providers** and **consumers**, and also
+lowering necessary trust required between two independent parties for such integrations, by delegating
+as much of the required trust to **trusted entities** of the **network**. it is highly recommended for
+implementers of any **network** according to this specification to also implement any complementary such service
+in addition to **trusted entities** specified in these documents, for example ones for measuring performance
+and reliability of **provider** services.
