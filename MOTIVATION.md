@@ -18,7 +18,7 @@ as it currently stands, the conventional method of conducting **direct integrati
 
 this method involves authenticating accounts bound to developer/maintainers of **consumer** services instead of the services themselves, and these maintainers might use the same authentication credentials (_API key_) for a multitude of their services. subsequently, it bears several issues:
 
-1. there is no isolation in communication criteria of different **consumer** services, for example usage limits, allocated resources, etc.
+1. there is no isolation in communication criteria of different **consumer** services, for example usage limits, allocated resources, etc. this can for example cause developers of one **consumer** service inadvarently breaking functionality of another service sharing the _API key_.
 1. *API key*s are granted towards people, which are not necessarily bound to a specific **consumer** service, partially delegating the security of the *API key*s to HR processes within the larger maintainer entity. occasionally **provider** services do offer work-arounds for this issue, however that translates into increased development and maintenance costs for developers of **provider** services.
 1. the current method is by no means interoperable, and hence not at all automatable as well, which translates into higher manual costs for developer/maintainers of **consumer** services.
 
