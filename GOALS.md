@@ -37,27 +37,20 @@ future specifications in that area.
 
 ## Security
 
-### Secure Communication Channel
+it is a direct aim of this specification to facilitate a secure and trustable integration protocol between
+services. some security properties of the **network** will be up to choice of implementations not specified
+explicitly by these documents, however, assuming properties described in [this section](#SECURITY.md), the
+protocols should have following properties:
 
-a secure communication channel between arbitrary parties within a specific **network** is assumed.
-it is highly recommended that the most common and secure method for establishing such communication channels
-be used, which at the time of this writing would be
-[TLS protocol version 1.2](https://tools.ietf.org/html/rfc5246).
+- strong backward and forward secrecy
+- resilience against MITM
+- resilience against replay attacks
+- resilience against untrusted services
 
-however, the protocols are intended to not be tied to specifics of establishing such communication,
-and alternatives are considered and discussed in case of a failure in that layer, though that
-should not be considered as part of the main body of the specification, and should be utilized with
-extreme caution and consideration as it is highly recommended for most scenarios to stick to standard
-methodologies for establishing secure communication instead of utilizing customized methods within
-established **networks**.
-
-### Cryptography
-
-no specific cryptographic functions and/or methodologies are assumed for security of communications
-specified in this protocol. it was specifically our intention that the protocols be agnostic towards
-the choice of asymmetric and symmetric cryptography. all encryption is delegated to the secure communication
-channels, and for the protocols only digital signatures are assumed with explicitly mentioned
-expected properties. the specification is agnostic to any properties beyond those explicitly mentioned.
+as mentioned in the [previous section](#interoperability), the specification is agnostic to lower
+level security measures in communication between all involved parties, however it explicitly specifies some
+properties that must be satisfied by any choice of the aforementioned measures, and it does make specific
+recommendations for such choices according to the technologies available at the time of this writing.
 
 ## Seamlessness
 
