@@ -20,7 +20,7 @@ for easing the process of accessing and reading different sections of this speci
     1. #### [security](GOALS.md#security)
         1. ##### [secure communication channel](GOALS.md#secure-communication-channel)
         1. ##### [cryptography](Goals.md#cryptography)
-    1. #### [seamlessness](GOALS.md#seamlessness]
+    1. #### [seamlessness](GOALS.md#seamlessness)
 1. ### terminology
 1. ### notation
 1. ### protocols
