@@ -5,7 +5,7 @@
 integration between different services is dependent on services being able to establish communication criteria 
 (authentication, authorization of required resources and functionality)
 and then subsequently communicating based on the established criteria. the later part involves **consumer** services
-utilizing *SDKs*s developed either by or based on API specifications of **provider** services. as this process is highly
+utilizing *SDK*s developed either by or based on API specifications of **provider** services. as this process is highly
 **provider** specific, there are hard limitations on how inter-operable and seamless the process can effectively become,
 however standardizations on **provider** APIs such as 
 [inter-connectible services specification](https://github.com/CONNECT-platform/connect-platform/blob/master/INTERCONNECTIBILITY.md) 
