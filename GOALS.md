@@ -46,7 +46,10 @@ be used, which at the time of this writing would be
 
 however, the protocols are intended to not be tied to specifics of establishing such communication,
 and alternatives are considered and discussed in case of a failure in that layer, though that
-should not be considered as part of the main body of the specification.
+should not be considered as part of the main body of the specification, and should be utilized with
+extreme caution and consideration as it is highly recommended for most scenarios to stick to standard
+methodologies for establishing secure communication instead of utilizing customized methods within
+established **networks**.
 
 ### Cryptography
 
@@ -55,7 +58,6 @@ specified in this protocol. it was specifically our intention that the protocols
 the choice of asymmetric and symmetric cryptography. all encryption is delegated to the secure communication
 channels, and for the protocols only digital signatures are assumed with explicitly mentioned
 expected properties. the specification is agnostic to any properties beyond those explicitly mentioned.
-
 
 ## Ease of Development
 
