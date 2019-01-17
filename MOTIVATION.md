@@ -16,7 +16,7 @@ can avail a host of development tools for that purpose, namely _automatic SDK ge
 
 as it currently stands, the conventional method of conducting **direct integration**, is for the developers of the **consumer** service to utilize some web-portal or some other provider-specific method to first _authenticate_ themselves (usually by registering real accounts), obtaining some sort of _API key_, and feeding that _API key_ into the *SDK*s they utilize to communicate with **provider** APIs.
 
-since this method involves authenticating accounts bound to developer/maintainers of **consumer** services instead of the services themselves. as these maintainers might use the same authentication credentials (_API key_) for a multitude of their services, several issues arise:
+this method involves authenticating accounts bound to developer/maintainers of **consumer** services instead of the services themselves, and these maintainers might use the same authentication credentials (_API key_) for a multitude of their services. subsequently, it bears several issues:
 
 1. there is no isolation in communication criteria of different **consumer** services, for example usage limits, allocated resources, etc.
 1. *API key*s are granted towards people, which are not necessarily bound to a specific **consumer** service, partially delegating the security of the *API key*s to HR processes within the larger maintainer entity. occasionally **provider** services do offer work-arounds for this issue, however that translates into increased development and maintenance costs for developers of **provider** services.
