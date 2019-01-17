@@ -32,8 +32,8 @@ from one **network** to another, or for integrating with services residing withi
 the focus of these documents is establishing and operating within the boundaries of one specific
 **network**, and further work is required to achieve inter-network interoperability. the protocols in this
 specification should however be easily adaptable to such future specifications in a backwards-compatible
-manner and most probably by means of optional extensions, though that cannot be guaranteed for all possible
-future specifications in that area.
+manner and most probably by means of optional extensions, though that cannot be guaranteed for all such possible
+future specifications.
 
 ## Security
 
