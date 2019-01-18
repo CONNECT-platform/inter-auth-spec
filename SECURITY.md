@@ -11,14 +11,14 @@ MUST satisfy the required properties.
 
 ## Secure Communication
 
-a secure communication channel between arbitrary parties within a specific **network** is assumed, i.e.
+a secure communication channel between arbitrary parties within a specific **network** is REQUIRED, i.e.
 parties within the network:
 
 - MUST be able to verify the claimed origin of an incoming message,
 - MUST be able to ascertain that outgoing messages intended for specific recipients are received by said recipients
 - MUST be able to ascertain that only the intended recipients of an outgoing message can obtain the contents of the message.
 
-implementation MUST provide such mechanism between arbitrary parties, though it CAN utilize different
+implementation MUST provide such mechanism between arbitrary parties, though it MAY utilize different
 technologies and strategies based on parties involved.
 
 ### Standard Implementation
@@ -32,7 +32,7 @@ that protocol to establish secure communication channels between parties within 
 ### External Communication
 
 a secure communication channel between **trusted entities** of the **network** and external parties
-is assumed. specifically, **trusted entities** are assumed to be able to establish secure communication
+is REQUIRED. specifically, **trusted entities** are REQUIRED to be able to establish secure communication
 channels with end-users, depending on how end-users are identified in the **network**, in a manner that
 guarantees an acceptable level of certainty that the intended user was communicated with.
 
@@ -44,10 +44,12 @@ with the user to a reasonable degree of certainty that the intended user was com
 
 since only **trusted entities** are required to establish secure external communication channels,
 the specification remains explicitly agnostic about how it is implemented, as it does not affect interoperability.
+regardless, any implementation for establishing such channels MUST satisfy the properties of secure communication channels
+described [here](#secure-communication).
 
 ## Signatures
 
-signature mechanisms between various parties is required through out the specification. such mechanisms,
+signature mechanisms between various parties is REQUIRED through out the specification. such mechanisms,
 established between two parties, the _sender_ and the _receiver_, MUST satisfy the following properties:
 
 - _receiver_ MUST be able to ascertain that an incoming message has been signed by the _sender_
@@ -62,6 +64,6 @@ to sign messages and send them as [JSON Web Tokens (JWT)](https://tools.ietf.org
 choice of signature and MAC algorithms SHOULD be limited to the
 [minimum requirements of the specification](https://tools.ietf.org/html/rfc7519#section-8), which at the
 time of this writing would only constitute HMAC SHA-256 ("HS256").
-minimum 32 bytes of full-entropy keys should be utilized, i.e. each byte should be chosen independently
+minimum 32 bytes of full-entropy keys MUST be utilized, i.e. each byte MUST be chosen independently
 of other bytes uniformly across all possible values. the shared keys MUST be unique to each pair
 of communicating parties.
