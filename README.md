@@ -22,10 +22,11 @@ for easing the process of accessing and reading different sections of this speci
 1. ### terminology
 1. ### notation
 1. ### [security](SECURITY.md)
-    1. #### [cryptography](SECURITY.md#cryptography)
     1. #### [secure communication](SECURITY.md#secure-communication-channel)
+        1. ##### [standard implementation](SECURITY.md#standard-implementation)
         1. ##### [external communication](SECURITY.md#external-communication)
     1. #### [signatures](SECURITY.md#signatures)
+        1. ##### [standard implementation](SECURITY.md#standard-implementation-1)
 1. ### protocols
     1. #### direct integration
     1. #### authorized integration
