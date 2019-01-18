@@ -30,7 +30,7 @@ all capital letters.
 
 ### Service
 
-the term **service** may to refer to software applications residing on some
+the term **service** refers to software applications residing on some
 [URI](https://tools.ietf.org/html/rfc3986) accessible via the Internet, meaning its functionalities
 are exposed in form of sub-paths of the root-path of the **service**, i.e. they are accessible
 via some URI over the internet such that the difference between these URIs and the root URI
