@@ -27,13 +27,15 @@ task of establishing a **network** by implementing a set of **trusted entities**
 within those **networks**, with the goal of increasing flexibility of the specification, specifically with
 regards to security considerations, while maintaining a high interoperability within any **network**.
 
-that might lead to limited interoperability between **networks**, for example for migrating a service
-from one **network** to another, or for integrating with services residing within another **network**.
-the focus of these documents is establishing and operating within the boundaries of one specific
-**network**, and further work is required to achieve inter-network interoperability. the protocols in this
-specification should however be easily adaptable to such future specifications in a backwards-compatible
-manner and most probably by means of optional extensions, though that cannot be guaranteed for all possible
-future specifications in that area.
+in situations where the said ambiguity affects inter-**network** interoperability, a _standard implementation_
+is also specified. the specification, constrained strictly to the _standard implementation_, i.e. the
+**standard implementation of InterAuth specification**, should also guarantee inter-**network** interoperability.
+
+implementations that are not compliant with the _standard implementation_ might void the
+inter-**network** interoperability, though interoperability within the **network** should remain intact regardless.
+
+**direct** and **authorized** integrations across multiple **networks** are not specified by these documents,
+and further work is required for enabling such integrations.
 
 ## Security
 
