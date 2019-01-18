@@ -1,6 +1,6 @@
 # InterAuth specification
 
-these documents aim to provide an interoperable, secure and easy-to-develop framework for seamless communication between various (micro)services in various scenarios. to be more specific, these documents focus on one service, **consumer**, requesting some functionality or data from another service, **provider**, with them most probably being developed and maintained by separate entities, and probably some financial transaction required in exchange for the services of the **provider**. these documents aim to put forth a specification such that implementations conforming to said specification can facilitate such integrations in a secure and highly interoperable manner.
+these documents aim to provide an interoperable, secure and easy-to-develop framework for seamless communication between various (micro)**services** in various scenarios. to be more specific, these documents focus on one **service**, **consumer**, requesting some functionality or data from another **service**, **provider**, with them most probably being developed and maintained by separate entities, and probably some financial transaction required in exchange for the services of the **provider**. these documents aim to put forth a specification such that implementations conforming to said specification can facilitate such integrations in a secure and highly interoperable manner.
 
 targeted integrations can be broken into two categories:
 

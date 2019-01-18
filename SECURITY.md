@@ -11,15 +11,15 @@ MUST satisfy the required properties.
 
 ## Secure Communication
 
-a secure communication channel between arbitrary parties within a specific **network** is REQUIRED, i.e.
-parties within the network:
+a secure communication channel between arbitrary **services** within a specific **network** is REQUIRED, i.e.
+**services** within the network:
 
 - MUST be able to verify the claimed origin of an incoming message,
 - MUST be able to ascertain that outgoing messages intended for specific recipients are received by said recipients
 - MUST be able to ascertain that only the intended recipients of an outgoing message can obtain the contents of the message.
 
-implementation MUST provide such mechanism between arbitrary parties, though it MAY utilize different
-technologies and strategies based on parties involved.
+implementation MUST provide such mechanism between arbitrary **services**, though it MAY utilize different
+technologies and strategies based on **services** involved.
 
 ### Standard Implementation
 
@@ -27,7 +27,7 @@ the standard implementation for establishing secure communication channel is uti
 Layer (TLS). the version will vary over time based on widespread use and known security issues. at the time
 of this writing, [TLS protocol version 1.2](https://tools.ietf.org/html/rfc5246) is the standard version.
 any implementation conforming to the _standard implementation of InterAuth specification_ MUST utilize
-that protocol to establish secure communication channels between parties within the network.
+that protocol to establish secure communication channels between **services** within the network.
 
 ### External Communication
 
@@ -49,10 +49,12 @@ described [here](#secure-communication).
 
 ## Signatures
 
-signature mechanisms between various parties is REQUIRED through out the specification. such mechanisms,
-established between two parties, the _sender_ and the _receiver_, MUST satisfy the following properties:
+signature mechanisms between various **services** is REQUIRED through out the specification. such mechanisms,
+established between two **services**, the _sender_ and the _receiver_, MUST satisfy the following properties:
 
-- _receiver_ MUST be able to ascertain that an incoming message has been signed by the _sender_
+- _receiver_ MUST be able to ascertain that an incoming message has been signed by the _sender_ in its totality, i.e.
+that all of the message was signed by the _sender_ and no part of it was tampered with between the time of signing
+and the time of verification
 - _receiver_ MUST be able to obtain the contents of incoming messages properly
 - the resulting signed messages MUST be unique to _sender_ for same or varying messages
 
@@ -66,4 +68,4 @@ choice of signature and MAC algorithms SHOULD be limited to the
 time of this writing would only constitute HMAC SHA-256 ("HS256").
 minimum 32 bytes of full-entropy keys MUST be utilized, i.e. each byte MUST be chosen independently
 of other bytes uniformly across all possible values. the shared keys MUST be unique to each pair
-of communicating parties.
+of communicating **services**.
