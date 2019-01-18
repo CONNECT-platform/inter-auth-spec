@@ -1,7 +1,5 @@
 # Security
 
-## Cryptography
-
 no specific cryptographic functions and/or methodologies are assumed for security of communications
 specified in this protocol. it was specifically our intention that the protocols be agnostic towards
 the choice of asymmetric and symmetric cryptography. all encryption is delegated to the secure communication
