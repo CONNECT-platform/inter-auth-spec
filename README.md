@@ -4,7 +4,7 @@ these documents aim to provide an interoperable, secure and easy-to-develop fram
 
 targeted integrations can be broken into two categories:
 
-1. **direct integration**: where the functionality/data provided by the **provider** merely relates to the **consumer**, or by some other measure the **provider** can and will provide the aforementioned functionality/data to the **provider** without authorization of any third-party being required
+1. **direct integration**: where the functionality/data provided by the **provider** merely relates to the **consumer**, or by some other measure the **provider** can and will provide the aforementioned functionality/data to the **consumer** without authorization of any third-party being required
 
 1. **authorized integration**: where the functionality/data provided by the **provider** relates to, or by some other measure requires approval of a third-party, the **authorizer**
 
