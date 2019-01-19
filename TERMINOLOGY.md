@@ -10,14 +10,20 @@ the terms **specification** or **spec**, when used without explicitly referencin
 also refer to the same set of specifications. these terms, alongside the term **these documents**,
 might be used interchangeably through-out these documents.
 
+## Conformity
+
 an implementation is conforming to **the specification** if and only if it satisfies all requirements
 detailed in the specification, excluding those detailed in sections titled _Standard Implementation_.
+satisfying requirements MUST be in accordance to requirement indicators detailed in [this section](#requirement-indicators).
+
+### Standard Implementation
+
 an implementation is conforming to **the standard implementation of the specification**, or
 **the standard implementation of InterAuth specification**, or **standard implementation of InterAuth spec**,
 if and only if it satisfies requirements detailed in the specification including those detailed
 in sections titled _Standard Implementation_.
 
-## Requirement Indicators
+### Requirement Indicators
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
 "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
@@ -42,10 +48,14 @@ the term is to be interpreted as described only
 when written in **bold** characters. the term (micro)service and microservice might be used
 interchangeably and are to be interpreted as same.
 
+### Root Address
+
 the term **root address** of a specific **service** is used in reference to the URI the **service**
 is residing on, according to the definition outlined above. the term **root-path**, or the expression
 _a **service** residing on an address_,
 might be used interchangeably and is to be interpreted as same.
+
+### Endpoint
 
 the term **endpoint** refers to some exposed functionality of some **service**. an endpoint is denoted
 using the additional path segments of the endpoint URI compared to the root-path of the **service**.
@@ -69,6 +79,8 @@ and **signing function** might be used interchangeably and should be interpreted
 
 the terms **signed message**, **message bearing signature**, **message with signature**, etc. are used in
 reference to a message that has undergone a signing operation.
+
+### Self-Signing
 
 the term **self-signing** is used in reference to where the signing is conducted between a **service** and
 itself, i.e. messages signed through the mechanism are intended to only be verifiable by the same **service**
