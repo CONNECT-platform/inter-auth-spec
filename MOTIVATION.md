@@ -3,11 +3,7 @@
 ## Background
 
 integration between different **services** is dependent on **services** being able to establish communication criteria
-(authentication, authorization of required resources and functionality)
-and then subsequently communicating based on the established criteria. the later part involves **consumer**
-**services** utilizing *SDK*s developed either by or based on API specifications of **provider** services. as this process is highly **provider** specific, there are hard limitations on its maximum effective interoperability and seamlessness, however standardizations of **provider** APIs such as [inter-connectible services specification](https://github.com/CONNECT-platform/connect-platform/blob/master/INTERCONNECTIBILITY.md)
-or [Open API](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)
-can avail a host of development tools for that purpose, namely _automatic SDK generation_ ([CONNECT platform itself](https://github.com/CONNECT-platform/connect-platform) and [Swagger Codegen](https://swagger.io/tools/swagger-codegen/) respectively), greatly easing the second component of integration process. however, the first component, which can be boiled down to _authentication_, corresponding to **direct integration**, and _authorization_, corresponding to **authorized integration**, still suffers from lack of any standardization, as there are either no specifications available or available specifications lack proper applicability as they have been designed with other intentions.
+and then subsequently communicating based on the established criteria. stanrdization of _API_ or _API documentation_ has availed solutions such as _automatic SDK generation_ to support the second component. however, the first component still suffers from lack of any standardization, as there are either no specifications available or available specifications lack proper applicability as they have been designed with other intentions.
 
 ## Direct Integration
 
