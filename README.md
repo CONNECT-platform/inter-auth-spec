@@ -10,7 +10,7 @@ targeted integrations can be broken into two categories:
 
 ## contents
 
-for easing the process of accessing and reading different sections of this specification, it is broken down into several documents. in the following section all these subdocuments are named in the form of a table of contents and
+for easing the process of accessing and reading different sections of this specification, it is broken down into several documents.
 
 
 1. ### [motivation](MOTIVATION.md)
