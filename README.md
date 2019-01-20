@@ -34,6 +34,10 @@ for easing the process of accessing and reading different sections of this speci
         1. ##### [endpoint](TERMINOLOGY.md#endpoint)
         1. ##### [signing](TERMINOLOGY.md#signing)
         1. ##### [self-signing](TERMINOLOGY.md#self-signing)
+    1. #### [network](TERMINOLOGY.md#network)
+        1. ##### [trusted entities](TERMINOLOGY.md#trusted-entities)
+        1. ##### [providers/consumers](TERMINOLOGY.md#providersconsumers)
+        1. ##### [integration](TERMINOLOGY.md#integration)
 1. ### notation
 1. ### [security](SECURITY.md)
     1. #### [secure communication](SECURITY.md#secure-communication-channel)
