@@ -64,6 +64,9 @@ endpoint is accessible via `https://some-server.io/some-address/some-namespace/s
 `/some-namespace/some-func` and `some-namespace/some-func` might be used to identify the endpoint
 and refer to it.
 
+within the scope of this specification, all endpoints are assumed to respond to communication over [HTTP](https://tools.ietf.org/html/rfc2616). use of InterAuth over any protocol other that HTTP is outside the scope
+of these documents.
+
 ### Signing
 
 the term **signing** is used as an operation, conducted by some **service**, on some outgoing message,
@@ -85,3 +88,28 @@ reference to a message that has undergone a signing operation.
 the term **self-signing** is used in reference to where the signing is conducted between a **service** and
 itself, i.e. messages signed through the mechanism are intended to only be verifiable by the same **service**
 later (for example to ascertain that the communication is continuation of a previous message they sent).
+
+## Network
+
+the term **network** refers to a collection of trusted **services**, referred to as **trusted entities**, alongside some other **services**, such that all **services** in the collection have a private signing mechanism with each of the **trusted entities** so that they can send and receive messages specifically to and from **trusted entities** in a verifiable manner.
+conceptually, **services** in a network trust **trusted entities** in that they will act according to the role specified
+in these documents, and act on that in good intentions.
+
+the term MUST only be interpreted as described here only when written in all **bold** characters. expressions **services** within the boundary of a **network**, or **services** within a **network**, or similar expressions, refer to the **services**
+that comprise the **network**, including **trusted entities**.
+
+### Trusted Entities
+
+as described above, the term **trusted entities** refers to principal services within a **network** that all **services**
+in the **network** have established private signing mechanisms with so that they can communicate in a verifiable manner.
+other **services** are accepted into a specific **network** when **trusted entities** recognize them and establish such
+a signing mechanism with them, thus essentially **trusted entities** form the core of any **network**.
+
+### Providers/Consumers
+
+the term **provider** refers to a **service** who will provide some functionality to other **services** within the **network**, by means of returning some (possibly computed) data, storing/mutating some persistent state, or combining
+functionality provided by other **providers** including the same **service**. the term **consumer** refers to the **service** requesting functionality provided by some **provider**. **consumers** and **providers** are usually (but not necessarily) maintained and developed by separate entities (teams/organizations), and the functionality is usually provided by the **provider** in exchange for some financial transaction from **consumer**.
+
+### Integration
+
+the term **integration** is used to denote communication between a **consumer** and a **provider** within the **network**, by means of the **provider** providing some functionality (as described [here](#providers-consumers)) to the **consumer** in response to a request from the **consumer** for said functionality.
