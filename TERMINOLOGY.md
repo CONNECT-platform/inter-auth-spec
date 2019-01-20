@@ -37,11 +37,11 @@ all capital letters.
 ### Service
 
 the term **service** refers to software applications residing on some
-[URI](https://tools.ietf.org/html/rfc3986) accessible via the Internet, meaning its functionalities
+[URL](https://tools.ietf.org/html/rfc3986#section-1.1.3) accessible via the Internet, meaning its functionalities
 are exposed in form of sub-paths of the root-path of the **service**, i.e. they are accessible
-via some URI over the internet such that the difference between these URIs and the root URI
+via some URL over the internet such that the difference between these URLs and the root URI
 the **service** is said to be residing on is limited to additional
-[path segment](https://tools.ietf.org/html/rfc3986#section-3.3) on the URI
+[path segment](https://tools.ietf.org/html/rfc3986#section-3.3) on the URL
 attributed to the exposed functionality.
 
 the term is to be interpreted as described only
@@ -50,7 +50,7 @@ interchangeably and are to be interpreted as same.
 
 ### Root Address
 
-the term **root address** of a specific **service** is used in reference to the URI the **service**
+the term **root address** of a specific **service** is used in reference to the URL the **service**
 is residing on, according to the definition outlined above. the term **root-path**, or the expression
 _a **service** residing on an address_,
 might be used interchangeably and is to be interpreted as same.
@@ -58,7 +58,7 @@ might be used interchangeably and is to be interpreted as same.
 ### Endpoint
 
 the term **endpoint** refers to some exposed functionality of some **service**. an endpoint is denoted
-using the additional path segments of the endpoint URI compared to the root-path of the **service**.
+using the additional path segments of the endpoint URL compared to the root-path of the **service**.
 for example, if a **service** resides on `https://some-server.io/some-address`, and one of its specific
 endpoint is accessible via `https://some-server.io/some-address/some-namespace/some-func`, then
 `/some-namespace/some-func` and `some-namespace/some-func` might be used to identify the endpoint
