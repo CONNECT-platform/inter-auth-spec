@@ -51,7 +51,7 @@ interchangeably.
 ### Root Address
 
 the term **root address** of a specific **service** is used in reference to the URL the **service**
-is residing on, according to the definition outlined above. the term **root-path**, or the expression
+is residing on, according to the definition outlined [here](#service). the term **root-path**, or the expression
 _a **service** residing on an address_,
 might be used interchangeably and is to be interpreted as same.
 
