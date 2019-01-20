@@ -71,9 +71,9 @@ endpoints and over HTTP. communication between **services** over any other proto
 
 the term **signing** is used as an operation, conducted by some **service**, on some outgoing message,
 in a manner that the receiving parties can verify that the message was signed by the **service** and it
-has not been tampered with. specifics security properties are assumed for signing operations, as detailed
+has not been tampered with. specific security properties are assumed for signing operations, as detailed
 [here](SECURITY.md#signatures). signing is assumed between two (not-necessarily distinct) **services**,
-and not in a universal manner. in other words, when the term signing is used, it is in reference to a signing
+and not (necessarily) in a universal manner (i.e. **services** are not assumed to utilize same signing mechanism for all **services** they communicate with). in other words, when the term signing is used, it is in reference to a signing
 mechanism that enables safe transport of the message to a specific receiving party and not all possible
 receiving parties.
 
