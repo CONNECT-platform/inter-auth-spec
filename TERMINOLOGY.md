@@ -46,7 +46,7 @@ attributed to the exposed functionality.
 
 the term is to be interpreted as described only
 when written in **bold** characters. the term (micro)service and microservice might be used
-interchangeably and are to be interpreted as same.
+interchangeably.
 
 ### Root Address
 
