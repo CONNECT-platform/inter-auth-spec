@@ -65,7 +65,7 @@ endpoint is accessible via `https://some-server.io/some-address/some-namespace/s
 and refer to it.
 
 within the scope of this specification, all endpoints are assumed to respond to communication over [HTTP](https://tools.ietf.org/html/rfc2616). all communication between **services** are assumed to be via specific
-endpoints. communication between **services** over any other protocol falls beyond the scope of this specification.
+endpoints and over HTTP. communication between **services** over any other protocol falls beyond the scope of this specification.
 
 ### Signing
 
