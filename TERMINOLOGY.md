@@ -39,7 +39,7 @@ all capital letters.
 the term **service** refers to software applications residing on some
 [URL](https://tools.ietf.org/html/rfc3986#section-1.1.3) accessible via the Internet, meaning its functionalities
 are exposed in form of sub-paths of the root-path of the **service**, i.e. they are accessible
-via some URL over the internet such that the difference between these URLs and the root URI
+via some URL over the internet such that the difference between these URLs and the root URL
 the **service** is said to be residing on is limited to additional
 [path segment](https://tools.ietf.org/html/rfc3986#section-3.3) on the URL
 attributed to the exposed functionality.
