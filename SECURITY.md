@@ -31,8 +31,8 @@ that protocol to establish secure communication channels between **services** wi
 
 ### External Communication
 
-a secure communication channel between **trusted entities** of the **network** and external parties
-is REQUIRED. specifically, **trusted entities** are REQUIRED to be able to establish secure communication
+a secure communication channel between some **trusted entities** of the **network** and external parties
+is REQUIRED. specifically, some **trusted entities** are REQUIRED to be able to establish secure communication
 channels with end-users, depending on how end-users are identified in the **network**, in a manner that
 guarantees an acceptable level of certainty that the intended user was communicated with.
 
@@ -42,7 +42,7 @@ SMS, or verified authenticator apps on user's devices. such mechanisms can be us
 establishing secure communication channels (such as TLS/SSL) can be utilized to establish communication
 with the user to a reasonable degree of certainty that the intended user was communicated with.
 
-since only **trusted entities** are required to establish secure external communication channels,
+since only some **trusted entities** are required to establish secure external communication channels,
 the specification remains explicitly agnostic about how it is implemented, as it does not affect interoperability.
 regardless, any implementation for establishing such channels MUST satisfy the properties of secure communication channels
 described [here](#secure-communication).
