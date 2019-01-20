@@ -95,7 +95,7 @@ the term **network** refers to a collection of trusted **services**, referred to
 conceptually, **services** in a network trust **trusted entities** in that they will act according to the role specified
 in these documents, and act on that in good intentions.
 
-the term MUST only be interpreted as described here only when written in all **bold** characters. expressions **services** within the boundary of a **network**, or **services** within a **network**, or similar expressions, refer to the **services**
+the term is to be interpreted as described only when written in all **bold** characters. expressions **services** within the boundary of a **network**, or **services** within a **network**, or similar expressions, refer to the **services**
 that comprise the **network**, including **trusted entities**.
 
 ### Trusted Entities
