@@ -46,14 +46,14 @@ attributed to the exposed functionality.
 
 the term is to be interpreted as described only
 when written in **bold** characters. the term (micro)service and microservice might be used
-interchangeably.
+interchangeably and should be interpreted as the same.
 
 ### Root Address
 
 the term **root address** of a specific **service** is used in reference to the URL the **service**
 is residing on, according to the definition outlined [here](#service). the term **root-path**, or the expression
 _a **service** residing on an address_,
-might be used interchangeably.
+might be used interchangeably and should be interpreted as the same.
 
 ### Endpoint
 
@@ -95,7 +95,7 @@ the term **network** refers to a collection of trusted **services**, referred to
 conceptually, **services** in a network trust **trusted entities** in that they will act according to the role specified
 in these documents, and act on that in good intentions.
 
-the term is to be interpreted as described only when written in all **bold** characters. expressions **services** within the boundary of a **network**, or **services** within a **network**, or similar expressions, refer to the **services**
+the term is to be interpreted as described only when written in all **bold** characters. expressions _**services** within the boundary of a **network**_, or _**services** within a **network**_, or similar expressions, refer to the **services**
 that comprise the **network**, including **trusted entities**.
 
 ### Trusted Entities
