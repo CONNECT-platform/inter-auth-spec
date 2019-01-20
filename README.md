@@ -40,7 +40,7 @@ for easing the process of accessing and reading different sections of this speci
         1. ##### [integration](TERMINOLOGY.md#integration)
 1. ### notation
 1. ### [security](SECURITY.md)
-    1. #### [secure communication](SECURITY.md#secure-communication-channel)
+    1. #### [secure communication](SECURITY.md#secure-communication)
         1. ##### [standard implementation](SECURITY.md#standard-implementation)
         1. ##### [external communication](SECURITY.md#external-communication)
     1. #### [signatures](SECURITY.md#signatures)
