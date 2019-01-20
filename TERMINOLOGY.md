@@ -78,7 +78,7 @@ mechanism that enables safe transport of the message to a specific receiving par
 receiving parties.
 
 the terms **signature mechanism**, **signature function**, **signing mechanism**, **signing operation**
-and **signing function** might be used interchangeably and should be interpreted the same.
+and **signing function** might be used interchangeably and should be interpreted as the same.
 
 the terms **signed message**, **message bearing signature**, **message with signature**, etc. are used in
 reference to a message that has undergone a signing operation.
@@ -92,22 +92,18 @@ later (for example to ascertain that the communication is continuation of a prev
 ## Network
 
 the term **network** refers to a collection of trusted **services**, referred to as **trusted entities**, alongside some other **services**, such that all **services** in the collection have a private signing mechanism with each of the **trusted entities** so that they can send and receive messages specifically to and from **trusted entities** in a verifiable manner.
-conceptually, **services** in a network trust **trusted entities** in that they will act according to the role specified
-in these documents, and act on that in good intentions.
+conceptually, **services** in a network trust **trusted entities** in that they will act according to the corresponding roles specified in these documents, and act on said roles with good intentions.
 
 the term is to be interpreted as described only when written in all **bold** characters. expressions _**services** within the boundary of a **network**_, or _**services** within a **network**_, or similar expressions, refer to the **services**
 that comprise the **network**, including **trusted entities**.
 
 ### Trusted Entities
 
-as described above, the term **trusted entities** refers to principal services within a **network** that all **services**
-in the **network** have established private signing mechanisms with so that they can communicate in a verifiable manner.
-other **services** are accepted into a specific **network** when **trusted entities** recognize them and establish such
-a signing mechanism with them, thus essentially **trusted entities** form the core of any **network**.
+as described [here](#network), the term **trusted entities** refers to principal services within a **network** that all **services** in the **network** have established private signing mechanisms with so that they can communicate in a verifiable manner. other **services** are accepted into a specific **network** when **trusted entities** recognize and establish such a signing mechanism with them, thus essentially **trusted entities** form the core of any **network**.
 
 ### Providers/Consumers
 
-the term **provider** refers to a **service** who will provide some functionality to other **services** within the **network**, by means of returning some (possibly computed) data, storing/mutating some persistent state, or combining
+the term **provider** refers to a **service** who will provide some functionality to other **services** within the **network** via some endpoints, by means of returning some (possibly computed) data, storing/mutating some persistent state, or combining
 functionality provided by other **providers** including the same **service**. the term **consumer** refers to the **service** requesting functionality provided by some **provider**. **consumers** and **providers** are usually (but not necessarily) maintained and developed by separate entities (teams/organizations), and the functionality is usually provided by the **provider** in exchange for some financial transaction from **consumer**.
 
 ### Integration
