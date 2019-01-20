@@ -64,8 +64,8 @@ endpoint is accessible via `https://some-server.io/some-address/some-namespace/s
 `/some-namespace/some-func` and `some-namespace/some-func` might be used to identify the endpoint
 and refer to it.
 
-within the scope of this specification, all endpoints are assumed to respond to communication over [HTTP](https://tools.ietf.org/html/rfc2616). use of InterAuth over any protocol other that HTTP is outside the scope
-of these documents.
+within the scope of this specification, all endpoints are assumed to respond to communication over [HTTP](https://tools.ietf.org/html/rfc2616). all communication between **services** are assumed to be via specific
+endpoints. communication between **services** over any other protocol falls beyond the scope of this specification.
 
 ### Signing
 
@@ -113,3 +113,7 @@ functionality provided by other **providers** including the same **service**. th
 ### Integration
 
 the term **integration** is used to denote communication between a **consumer** and a **provider** within the **network**, by means of the **provider** providing some functionality (as described [here](#providers-consumers)) to the **consumer** in response to a request from the **consumer** for said functionality.
+
+the term **direct integration** refers to integration between two **services** where authorization of another entity,
+**service**, end-user, etc., is not required, except perhaps that of some **trusted entity**. the term **authorized integration** refers to an integration that DOES require authorization of some entity other than **trusted entities** of
+the **network**. in that case, such entity is denoted by the term **authorizer**.
