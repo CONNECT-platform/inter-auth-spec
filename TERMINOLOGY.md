@@ -111,5 +111,5 @@ functionality provided by other **providers** including the same **service**. th
 the term **integration** is used to denote communication between a **consumer** and a **provider** within the **network**, by means of the **provider** providing some functionality (as described [here](#providers-consumers)) to the **consumer** in response to a request from the **consumer** for said functionality.
 
 the term **direct integration** refers to integration between two **services** where authorization of another entity,
-**service**, end-user, etc., is not required, except perhaps that of some **trusted entity**. the term **authorized integration** refers to an integration that DOES require authorization of some entity other than **trusted entities** of
+**service**, end-user, etc., is not required, except perhaps that of some **trusted entities**. the term **authorized integration** refers to an integration that DOES require authorization of some entity other than **trusted entities** of
 the **network**. in that case, such entity is denoted by the term **authorizer**.
